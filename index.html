@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <nav>
+      <div class="brand">
+        <img src="./images/logo.svg" alt="span logo" />
+      </div>
+      <div class="nav-links">
+        <ul class="nav-list" type="none">
+          <li class="features-list">
+            <a>Features</a>
+            <img
+              class="dropdown"
+              src="./images/icon-arrow-down.svg"
+              alt="arrow-down"
+            />
+            <ul class="features" type="none">
+              <li>
+                <img src="./images/icon-todo.svg" alt="todo-icon" />
+                Todo List
+              </li>
+              <li>
+                <img src="./images/icon-calendar.svg" alt="calendar-icon" />
+                Calendar
+              </li>
+              <li>
+                <img src="./images/icon-reminders.svg" alt="reminders-icon" />
+                Reminders
+              </li>
+              <li>
+                <img src="./images/icon-planning.svg" alt="planning-icon" />
+                Planning
+              </li>
+            </ul>
+          </li>
+          <li class="company-list">
+            <a>Company</a>
+            <img
+              class="dropdown"
+              src="./images/icon-arrow-down.svg"
+              alt="arrow-down"
+            />
+            <ul class="company" type="none">
+              <li>History</li>
+              <li>Our Team</li>
+              <li>Blog</li>
+            </ul>
+          </li>
+          <li><a href="">Careers</a></li>
+          <li><a href="">About</a></li>
+        </ul>
+        <ul class="member" type="none">
+          <li><a href="">Login</a></li>
+          <li><a href="">Register</a></li>
+        </ul>
+      </div>
+      <div class="menu">
+        <img src="./images/icon-menu.svg" alt="menu-icon" />
+      </div>
+    </nav>
+    <main>
+      <div class="text">
+        <h1>Make Remote Work</h1>
+        <p>
+          Get you team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <h3>Learn More</h3>
+        <div class="sponsor">
+          <img src="./images/client-databiz.svg" alt="databiz-logo" />
+          <img src="./images/client-audiophile.svg" alt="audiopille-logo" />
+          <img src="./images/client-meet.svg" alt="meet-logo" />
+          <img src="./images/client-maker.svg" alt="maker-logo" />
+        </div>
+      </div>
+      <div class="image">
+        <img src="./images/image-hero-desktop.png" alt="" />
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
