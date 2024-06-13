@@ -51,6 +51,10 @@ nav div.nav-links {
   justify-content: space-between;
 }
 
+nav div.nav-links img.close-menu {
+  display: none;
+}
+
 nav div.nav-links ul.nav-list,
 nav div.nav-links ul.member {
   display: flex;
@@ -86,7 +90,7 @@ nav div.nav-links ul.nav-list li ul.features {
   /*dropdown features*/
   position: absolute;
   display: none;
-  left: -50%;
+  left: -45%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   border-radius: 0.7rem;
   margin: 1rem 0;
@@ -114,7 +118,7 @@ nav div.nav-links ul.nav-list li ul.active {
 }
 
 nav div.nav-links ul.nav-list li ul.features li img {
-  margin: 0 1rem;
+  margin-right: 1rem;
 }
 
 nav div.menu img {
@@ -159,9 +163,9 @@ main div.text h3 {
   border: 1px solid var(--AlmostBlack);
   background-color: var(--AlmostBlack);
   color: var(--AlmostWhite);
-  width: 21%;
+  width: 20%;
   text-align: center;
-  padding: 1rem;
+  padding: 1.2rem 1rem;
   border-radius: 0.7rem;
 }
 
@@ -204,6 +208,18 @@ main div.image img.mobile {
   }
 
   /* nav */
+  nav div.overlay.active {
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.507);
+  }
+
   nav {
     margin: 0;
     justify-content: space-between;
@@ -212,6 +228,43 @@ main div.image img.mobile {
 
   nav div.nav-links {
     display: none;
+  }
+
+  nav div.nav-links ul.nav-list li ul.features,
+  nav div.nav-links ul.nav-list li ul.company {
+    position: static;
+    box-shadow: none;
+  }
+
+  nav div.nav-links img.close-menu {
+    display: flex;
+    margin: 1.5rem;
+    margin-left: auto;
+  }
+
+  nav div.nav-links.active {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 60%;
+    display: block;
+    background-color: var(--AlmostWhite);
+    height: 100vh;
+  }
+
+  nav div.nav-links.active ul {
+    display: block;
+    text-align: left;
+  }
+
+  nav div.nav-links.active ul.member {
+    text-align: center;
+  }
+
+  nav div.nav-links.active ul.member li:nth-child(2) {
+    width: 60%;
+    margin: auto;
   }
 
   nav div.menu img {
@@ -232,6 +285,28 @@ main div.image img.mobile {
 
   main div.text {
     width: 100%;
+  }
+
+  main div.text h1 {
+    font-size: 2.5rem;
+    margin-top: 3.5rem;
+  }
+
+  main div.text p {
+    font-size: 1.1rem;
+    margin: 2rem 1.2rem;
+    font-weight: 500;
+  }
+
+  main div.text h3 {
+    margin: auto;
+    width: 30%;
+    border-radius: 1.2rem;
+  }
+
+  main div.text div.sponsor {
+    gap: 1rem;
+    justify-content: center;
   }
 
   main div.image {

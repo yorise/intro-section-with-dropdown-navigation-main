@@ -64,3 +64,27 @@ document.addEventListener("click", () => {
     }
   });
 });
+
+const openMenu = document.querySelector("nav div.menu img");
+const closeMenu = document.querySelector("nav div.nav-links img:nth-child(1)");
+const navLink = document.querySelector("nav div.nav-links");
+const overlay = document.querySelector("nav div.overlay");
+
+openMenu.addEventListener("click", () => {
+  navLink.classList.toggle("active");
+  overlay.classList.toggle("active");
+});
+
+closeMenu.addEventListener("click", () => {
+  navLink.classList.remove("active");
+  overlay.classList.remove("active");
+});
+
+document.addEventListener("click", (event) => {
+  const isClickInsideNav =
+    navLink.contains(event.target) || openMenu.contains(event.target);
+  if (!isClickInsideNav) {
+    navLink.classList.remove("active");
+    overlay.classList.remove("active");
+  }
+});
