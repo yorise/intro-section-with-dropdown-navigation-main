@@ -163,7 +163,7 @@ main div.text p {
   margin: 2.5rem 0;
 }
 
-main div.text h3 {
+main div.text h2 {
   border: 1px solid var(--AlmostBlack);
   background-color: var(--AlmostBlack);
   color: var(--AlmostWhite);
@@ -173,7 +173,7 @@ main div.text h3 {
   border-radius: 0.7rem;
 }
 
-main div.text h3:hover {
+main div.text h2:hover {
   background-color: var(--AlmostWhite);
   color: var(--AlmostBlack);
 }
@@ -303,7 +303,7 @@ main div.image img.mobile {
     font-weight: 500;
   }
 
-  main div.text h3 {
+  main div.text h2 {
     margin: auto;
     width: 30%;
     border-radius: 1.2rem;
