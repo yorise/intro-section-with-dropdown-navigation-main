@@ -8,11 +8,16 @@
 
 html,
 body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
   max-height: 100vh;
   font-family: "Epilogue";
 }
 
 ul {
+  list-style: none;
   padding: 0;
   margin: 0;
 }
@@ -131,19 +136,18 @@ nav div.menu img {
 /* main */
 
 main {
-  margin: 6rem auto 0;
-  width: 83%;
-  height: 80vh;
+  width: 75%;
+  height: 70vh;
   display: flex;
   justify-content: space-between;
-  z-index: -1;
+  align-items: center;
 }
 
 main div.text {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  width: 40%;
+  width: 50%;
   height: 100%;
 }
 
@@ -202,6 +206,7 @@ main div.image img.mobile {
 @media (max-width: 600px) {
   html,
   body {
+    display: block;
     text-align: center;
     margin: 0;
     overflow-x: hidden;
